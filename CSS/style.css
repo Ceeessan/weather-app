@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+    background: rgb(255, 252, 252);
+    height: 300vh;
+    background: rgb(255, 252, 252);
+    background: linear-gradient(
+        0deg,
+        rgba(255, 252, 252, 1) 9%,
+        rgb(141, 212, 233) 70%,
+        rgb(61, 105, 146) 92%
+    );
+}
+
+.header-sun{
+    width: 100px;
+    height:auto;
+    margin-right:100px;
+}
+
+.headerForPage {
+    width: 400px;
+    margin: auto;
+
+    font-size: 40px;
+    font-family: arial;
+    color: rgb(0, 18, 42);
+    border-bottom: 2px solid rgba(50, 96, 154, 0.8);
+}
+
+.header-container{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    height: 120px;
+  
+}
+
+.form-container{
+    display:flex;
+    flex-direction:row;
+  
+}
+
+.label-texts{
+    display:flex;
+    flex-direction:column;
+}
+
+
+form label#text{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: rgb(0, 18, 42);
+    margin-bottom: 5px;
+    
+}
+
+form input#city{
+    width: 200px;
+    height: 25px;
+    border:none;
+    border-radius: 2px;
+    font-size: 10px;
+    color: rgb(97, 97, 97);
+}
+
+form select#hour{
+    width:204px;
+    height: 25px;
+    border:none;
+    border-radius: 2px;
+    font-size: 10px;
+    color: rgb(97, 97, 97);
+}
+
+form .search-btn {
+    margin: auto;
+    margin-top:55px;
+    margin-left: 30px;
+    height: 38px;
+    padding: 8px 10px 10px 10px;
+    font-size: 18px;
+    border-style: none;
+    background-color: rgba(51, 103, 167, 0.8);
+    color: white;
+    border-radius: 2px;
+
+    transition: color 3s ease;
+}
+
+form .search-btn:hover{
+    background-color: rgba(65, 95, 132, 0.8);
+}
+
+#errorMessage {
+    color: rgb(111, 1, 1);
+}
+
+#container {
+    display: flex;
+    justify-content:left;
+    flex-direction: column;
+    width:500px;
+    padding:5px;
+    /* margin-right:5px; */
+}
+
+#container h2{
+    color:rgb(49, 49, 49);
+    letter-spacing: 1px;
+  
+}
+
+p {
+    font-family: arial;
+    font-size:12px;
+    color: rgb(87, 87, 87);
+}
+
+#firstIconToShow {
+    width: 150px;
+    height:auto;
+     position: relative;
+    left: 300px;
+    top: -220px; 
+}
+
+#weatherWithHours {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 10px;
+    margin-bottom: 50px;
+    position: relative;
+    top: -100px;
+}
+
+#weatherWithHours p {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 2px solid rgba(50, 96, 154, 0.8);
+}
+
+@media (max-width: 600px){
+
+    .form-container{
+        display:flex;
+        flex-direction:column;
+      
+    }
+
+    form .search-btn{
+        margin-top: 30px;
+    }
+
+    #container{
+        width:300px;
+    }
+
+    #firstIconToShow {
+        width: 150px;
+        height:auto;
+         position: relative;
+        left: 180px;
+        top: -200px; 
+    }
+    
+
+}

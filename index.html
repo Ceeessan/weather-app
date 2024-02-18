@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather app</title>
+
+        <script src="JS/script.js" defer></script>
+        <link href="CSS/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <h1 class="headerForPage">Weather forecast</h1>
+                <img src="images/noto--sun.svg" alt="sun" class="header-sun">
+            </div>
+     
+        </header>
+  
+
+        <form class="form-container">
+            <div class="label-texts">
+                <label for="text" id="text"> Write a city: </label>
+                <input type="text" placeholder=" City name" id="city" />
+                <label for="text" id="text"> At what Hour:</label> 
+                <select id="hour" name="numbers">
+                    <option value="0">0</option>
+                    <option  value="1">3h</option>
+                    <option value="2">6h</option>
+                    <option value="3">9h</option>
+                    <option value="4">12h</option>
+                    <option value="5">15h</option>
+                    <option value="6">18h</option>
+                    <option value="7">21h</option>
+                    <option value="8">24h</option>
+                    <option value="9">27h</option>
+                    <option value="10">30h</option>
+                </select>
+            </div>
+
+            <div>
+                <button class="search-btn">Search</button>
+            </div>
+        </form>
+
+        <h1 id="errorMessage"></h1>
+
+        <div id="container">
+         
+        </div>
+
+        <img src="" alt="" id="firstIconToShow" />
+
+        <div id="weatherWithHours"></div>
+    </body>
+</html>
